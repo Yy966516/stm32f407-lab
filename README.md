@@ -7,12 +7,13 @@
 ```
 stm32-lab/
 ├── lab1-IO-and-interrupt/
-│   └── main.c          # 实验1：IO 和中断（6学时）
+│   └── main.c                      # 实验1：IO 和中断（6学时）
 ├── lab2-segment-display-and-keys/  # 实验2：数码管和按键扩展（6学时）
 │   └── main2_1_adder.c             # 单位加法器（PG9=等号中断, PG10=清零中断嵌套）
 └── lab3-parallel-communication/    # 实验3：并行通信（12学时）
     ├── main_TX.c                   # 发送端（基础版，拨码变化触发握手）
-    ├── main3.c                     # 发送端（含查询/中断模式切换 + 速度测试）
+    ├── main3_sender.c              # 发送端（含查询/中断模式切换 + 速度测试）
+    ├── main3_receiver.c            # 接收端（含查询/中断模式切换 + 速度测试）
     ├── stm32f4xx_it.c              # 中断服务函数
     ├── stm32f4xx_hal_msp.c         # HAL MSP 初始化
     └── usart.c                     # UART 接收驱动
